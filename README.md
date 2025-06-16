@@ -17,6 +17,7 @@ BUILD WITH:
 - HTML, CSS, and JavaScript
 - LocalStorage for saving your progress
 
+![image](https://github.com/user-attachments/assets/c4637c84-dccb-43b0-a6c8-ec0ee73c063c)
 
 
 
