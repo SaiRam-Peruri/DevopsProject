@@ -1,6 +1,36 @@
-# If you prefer the allow list template instead of the deny list, see community template:
-# https://github.com/github/gitignore/blob/main/community/Golang/Go.AllowList.gitignore
-#
+# =======================
+# Terraform Specific
+# =======================
+.terraform/
+.terraform.lock.hcl
+*.tfstate
+*.tfstate.backup
+*.tfplan
+crash.log
+
+# Sensitive variables and credentials
+*.tfvars
+*.tfvars.json
+*.env
+credentials/
+gcloud/
+.aws/
+.azure/
+
+# =======================
+# SSH Keys
+# =======================
+*.pem
+*.key
+*.pub
+*.crt
+*.der
+id_rsa*
+id_ed25519*
+
+# =======================
+# Go (Golang) Specific
+# =======================
 # Binaries for programs and plugins
 *.exe
 *.exe~
@@ -8,15 +38,27 @@
 *.so
 *.dylib
 
-# Test binary, built with `go test -c`
+# Test binary
 *.test
 
-# Output of the go coverage tool, specifically when used with LiteIDE
+# Coverage outputs
 *.out
 
-# Dependency directories (remove the comment below to include it)
-# vendor/
-
-# Go workspace file
+# Go workspace files
 go.work
 go.work.sum
+
+# Dependency directories
+# Uncomment the next line if you vendor dependencies
+# vendor/
+
+# =======================
+# Editor/System Files
+# =======================
+.DS_Store
+*.swp
+*.bak
+*.log
+*.tmp
+.vscode/
+.idea/
