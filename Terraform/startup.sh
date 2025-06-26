@@ -25,7 +25,7 @@ sudo usermod -aG docker $USER
 cd /opt/myapp || mkdir -p /opt/myapp && cd /opt/myapp
 
 # Placeholder: fetch your code and Dockerfile (via git or file copy)
-git clone https://github.com/your-org/your-repo.git .
+git clone https://github.com/SaiRam-Peruri/DevopsProject.git .
 # OR copy it from storage bucket
 # gsutil cp gs://your-bucket/app/* .
 

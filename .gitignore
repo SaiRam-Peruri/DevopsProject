@@ -8,6 +8,8 @@
 *.tfplan
 crash.log
 
+
+
 # Sensitive variables and credentials
 *.tfvars
 *.tfvars.json
@@ -27,6 +29,8 @@ gcloud/
 *.der
 id_rsa*
 id_ed25519*
+Terraform/credentials.json
+
 
 # =======================
 # Go (Golang) Specific
