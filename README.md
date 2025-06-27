@@ -158,4 +158,10 @@ Welcome to the DevOps Study Planner! This project demonstrates a full-stack Go w
 
 ---
 
+## Special Thanks
+- Special thanks to **Madhuri Vadavalli** for her open public repository, which provided the foundation for this project. Her work on the core application (excluding Terraform) was invaluable and greatly appreciated.
+- This project extends her original work by adding Terraform-based infrastructure automation for GCP.
+
+---
+
 **Happy DevOps-ing!**
