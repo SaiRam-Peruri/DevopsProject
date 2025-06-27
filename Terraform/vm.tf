@@ -16,9 +16,13 @@ resource "google_compute_instance" "web" {
     access_config {}
   }
 
-  tags = ["ssh-access", "http-access"] # Match firewall rule target_tags
+  tags = ["ssh-access", "http-access"] # Ensures firewall rules apply
 
-  metadata_startup_script = file("startup.sh")
+  metadata = {
+    startup-script = file("startup.sh")
+    ssh-keys       = "ubuntu:${file("ubuntu-gcp.pub")}"
+  }
+
 
   depends_on = [
     google_compute_subnetwork.subnet

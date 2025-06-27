@@ -11,6 +11,7 @@ resource "google_compute_subnetwork" "subnet" {
   region        = var.region
   network       = google_compute_network.vpc.id
 }
+
 resource "google_compute_firewall" "default" {
   name    = "allow-ssh"
   network = google_compute_network.vpc.id
@@ -30,7 +31,7 @@ resource "google_compute_firewall" "allow_https" {
 
   allow {
     protocol = "tcp"
-    ports    = ["443"] # Allow HTTPS
+    ports    = ["443", "8443"] # Allow HTTPS
   }
 
   source_ranges = ["0.0.0.0/0"]   # Allow HTTPS from anywhere
