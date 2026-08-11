@@ -38,6 +38,7 @@ Welcome to the DevOps Study Planner! This project demonstrates a full-stack Go w
 
 ---
 
+<a id="features"></a>
 ## ✨ Features
 - Go web server serving static HTML pages
 - Docker multi-stage build (distroless for production)
@@ -48,6 +49,7 @@ Welcome to the DevOps Study Planner! This project demonstrates a full-stack Go w
 
 ---
 
+<a id="local-development"></a>
 ## Local Development
 1. **Build and run the Go app:**
    ```sh
@@ -61,6 +63,7 @@ Welcome to the DevOps Study Planner! This project demonstrates a full-stack Go w
 
 ---
 
+<a id="docker-usage"></a>
 ## 🚀 Docker Usage
 1. **Build the Docker image:**
    ```sh
@@ -153,12 +156,14 @@ Welcome to the DevOps Study Planner! This project demonstrates a full-stack Go w
 
 ---
 
+<a id="cicd"></a>
 ## 🔄 CI/CD
 - See `.github/workflows/cicd.yaml` for GitHub Actions pipeline.
 - Automate build, test, and deploy steps as needed.
 
 ---
 
+<a id="project-structure"></a>
 ## 📁 Project Structure
 ```
 .
@@ -174,6 +179,7 @@ Welcome to the DevOps Study Planner! This project demonstrates a full-stack Go w
 
 ---
 
+<a id="credits"></a>
 ## 👤 Credits
 - Built with Go, Docker, Kubernetes, Helm, Terraform, and GCP.
 - For more, see the official docs for each tool.
