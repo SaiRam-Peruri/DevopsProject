@@ -1,10 +1,32 @@
-# DevOps Study Planner – Full Stack & Cloud Deployment Guide
+<div align="center">
+
+# 🛠️ DevOps Study Planner
+
+### 🐳 One small Go app, taken through an entire cloud-native pipeline: Docker → Kubernetes + Helm → Terraform on GCP → GitHub Actions.
+
+<p>
+<img alt="Go" src="https://img.shields.io/badge/Go-00ADD8?style=for-the-badge&logo=go&logoColor=white"/>
+<img alt="Docker" src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white"/>
+<img alt="Kubernetes" src="https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white"/>
+<img alt="Helm" src="https://img.shields.io/badge/Helm-0F1689?style=for-the-badge&logo=helm&logoColor=white"/>
+<img alt="Terraform" src="https://img.shields.io/badge/Terraform-844FBA?style=for-the-badge&logo=terraform&logoColor=white"/>
+<img alt="Google Cloud" src="https://img.shields.io/badge/Google%20Cloud-4285F4?style=for-the-badge&logo=googlecloud&logoColor=white"/>
+<img alt="GitHub Actions" src="https://img.shields.io/badge/GitHub%20Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white"/>
+</p>
+
+<p>
+<img alt="last commit" src="https://img.shields.io/github/last-commit/SaiRam-Peruri/DevopsProject?style=flat-square&color=00D4FF"/>
+<img alt="repo size" src="https://img.shields.io/github/repo-size/SaiRam-Peruri/DevopsProject?style=flat-square&color=7B2CBF"/>
+<img alt="top language" src="https://img.shields.io/github/languages/top/SaiRam-Peruri/DevopsProject?style=flat-square&color=00A67E"/>
+</p>
+
+</div>
 
 Welcome to the DevOps Study Planner! This project demonstrates a full-stack Go web application, containerized with Docker, deployable to Kubernetes (with Helm), and fully automatable on Google Cloud Platform (GCP) using Terraform.
 
 ---
 
-## Table of Contents
+## 📋 Table of Contents
 - [Features](#features)
 - [Local Development](#local-development)
 - [Docker Usage](#docker-usage)
@@ -16,7 +38,7 @@ Welcome to the DevOps Study Planner! This project demonstrates a full-stack Go w
 
 ---
 
-## Features
+## ✨ Features
 - Go web server serving static HTML pages
 - Docker multi-stage build (distroless for production)
 - Helm chart and raw Kubernetes manifests
@@ -39,7 +61,7 @@ Welcome to the DevOps Study Planner! This project demonstrates a full-stack Go w
 
 ---
 
-## Docker Usage
+## 🚀 Docker Usage
 1. **Build the Docker image:**
    ```sh
    docker build -t go-web-app .
@@ -54,7 +76,7 @@ Welcome to the DevOps Study Planner! This project demonstrates a full-stack Go w
 
 ---
 
-## Kubernetes & Helm Deployment
+## ☸️ Kubernetes & Helm Deployment
 
 ### Using Raw Manifests
 1. Build and push your Docker image to a registry (e.g., GCR):
@@ -68,7 +90,7 @@ Welcome to the DevOps Study Planner! This project demonstrates a full-stack Go w
    kubectl apply -f k8s/manifests/
    ```
 
-### Using Helm
+### ☸️ Using Helm
 1. Update `image.repository` and `image.tag` in `helm/go-web-app-chart/values.yaml`.
 2. Install the chart:
    ```sh
@@ -79,14 +101,14 @@ Welcome to the DevOps Study Planner! This project demonstrates a full-stack Go w
 
 ---
 
-## Terraform GCP Infrastructure (with VM & Automated HTTPS Docker Deployment)
+## 📁 Terraform GCP Infrastructure (with VM & Automated HTTPS Docker Deployment)
 
-### Prerequisites
+### 📦 Prerequisites
 - [Terraform](https://www.terraform.io/downloads.html)
 - GCP project and service account with IAM roles
 - Service account key as `credentials.json` in the `Terraform/` directory
 
-### What This Deploys
+### ☁️ What This Deploys
 - **VPC and Subnet:** Custom network and subnet for your resources.
 - **Firewall:** 
   - SSH (22) only from your IP (edit in `vpc.tf`)
@@ -99,7 +121,7 @@ Welcome to the DevOps Study Planner! This project demonstrates a full-stack Go w
   - Your Go app runs in a Docker container, proxied by NGINX
 - **Outputs:** Public IP, instance name, VPC/subnet names, and SSH command
 
-### Usage
+### 🚀 Usage
 
 1. **Edit variables in `variable.tf` as needed.**
 2. **Enable required APIs in `enable-apis.tf`:**
@@ -131,13 +153,13 @@ Welcome to the DevOps Study Planner! This project demonstrates a full-stack Go w
 
 ---
 
-## CI/CD
+## 🔄 CI/CD
 - See `.github/workflows/cicd.yaml` for GitHub Actions pipeline.
 - Automate build, test, and deploy steps as needed.
 
 ---
 
-## Project Structure
+## 📁 Project Structure
 ```
 .
 ├── main.go, main_test.go, go.mod
@@ -152,7 +174,7 @@ Welcome to the DevOps Study Planner! This project demonstrates a full-stack Go w
 
 ---
 
-## Credits
+## 👤 Credits
 - Built with Go, Docker, Kubernetes, Helm, Terraform, and GCP.
 - For more, see the official docs for each tool.
 
@@ -165,3 +187,13 @@ Welcome to the DevOps Study Planner! This project demonstrates a full-stack Go w
 ---
 
 **Happy DevOps-ing!**
+
+---
+
+<div align="center">
+
+**Built by [Sai Ram Peruri](https://github.com/SaiRam-Peruri)** · AI Solutions Engineer · Former Cloud DevOps Engineer
+
+⭐ If this project helped you, consider starring the repo.
+
+</div>
