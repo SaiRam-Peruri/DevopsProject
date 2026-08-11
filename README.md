@@ -2,7 +2,7 @@
 
 # 🛠️ DevOps Study Planner
 
-### 🐳 One small Go app, taken through an entire cloud-native pipeline: Docker → Kubernetes + Helm → Terraform on GCP → GitHub Actions.
+### One small Go app, taken through an entire cloud-native pipeline: Docker → Kubernetes + Helm → Terraform on GCP → GitHub Actions.
 
 <p>
 <img alt="Go" src="https://img.shields.io/badge/Go-00ADD8?style=for-the-badge&logo=go&logoColor=white"/>
