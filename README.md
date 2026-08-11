@@ -79,6 +79,7 @@ Welcome to the DevOps Study Planner! This project demonstrates a full-stack Go w
 
 ---
 
+<a id="kubernetes--helm-deployment"></a>
 ## ☸️ Kubernetes & Helm Deployment
 
 ### Using Raw Manifests
@@ -104,6 +105,7 @@ Welcome to the DevOps Study Planner! This project demonstrates a full-stack Go w
 
 ---
 
+<a id="terraform-gcp-infrastructure"></a>
 ## 📁 Terraform GCP Infrastructure (with VM & Automated HTTPS Docker Deployment)
 
 ### 📦 Prerequisites
